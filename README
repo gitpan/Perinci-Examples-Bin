@@ -1,0 +1,26 @@
+NAME
+    Perinci::Examples::Bin - Perinci example scripts
+
+VERSION
+    version 0.01
+
+DESCRIPTION
+    This distribution contains example scripts in bin/. It is split from
+    Perinci::Example so the latter does not need to depend on
+    Perinci::CmdLine.
+
+DESCRIPTION
+    This module has Rinci metadata.
+
+FUNCTIONS
+    None are exported by default, but they are exportable.
+
+AUTHOR
+    Steven Haryanto <stevenharyanto@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2012 by Steven Haryanto.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
