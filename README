@@ -2,24 +2,33 @@ NAME
     Perinci::Examples::Bin - Perinci example scripts
 
 VERSION
-    version 0.01
+    version 0.02
 
 DESCRIPTION
     This distribution contains example scripts in bin/. It is split from
     Perinci::Example so the latter does not need to depend on
     Perinci::CmdLine.
 
-DESCRIPTION
-    This module has Rinci metadata.
+HOMEPAGE
+    Please visit the project's homepage at
+    <https://metacpan.org/release/Perinci-Examples-Bin>.
 
-FUNCTIONS
-    None are exported by default, but they are exportable.
+SOURCE
+    Source repository is at
+    <https://github.com/sharyanto/perl-Perinci-Examples-Bin>.
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    <https://rt.cpan.org/Public/Dist/Display.html?Name=Perinci-Examples-Bin>
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
 
 AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2012 by Steven Haryanto.
+    This software is copyright (c) 2013 by Steven Haryanto.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

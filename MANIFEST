@@ -1,11 +1,12 @@
-Build.PL
 Changes
 LICENSE
 MANIFEST
 MANIFEST.SKIP
 META.json
 META.yml
+Makefile.PL
 README
+bin/peri-eg-complete-fruits
 bin/peri-eg-test-completion
 dist.ini
 lib/Perinci/Examples/Bin.pm
