@@ -2,11 +2,12 @@ NAME
     Perinci::Examples::Bin - Perinci example scripts
 
 VERSION
-    version 0.02
+    This document describes version 0.03 of Perinci::Examples::Bin (from
+    Perl distribution Perinci-Examples-Bin), released on 2014-07-03.
 
 DESCRIPTION
     This distribution contains example scripts in bin/. It is split from
-    Perinci::Example so the latter does not need to depend on
+    Perinci::Examples so the latter does not need to depend on
     Perinci::CmdLine.
 
 HOMEPAGE
@@ -28,7 +29,7 @@ AUTHOR
     Steven Haryanto <stevenharyanto@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2013 by Steven Haryanto.
+    This software is copyright (c) 2014 by Steven Haryanto.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.
