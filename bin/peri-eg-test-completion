@@ -1,7 +1,7 @@
 #!perl
 
-our $DATE = '2014-07-03'; # DATE
-our $VERSION = '0.03'; # VERSION
+our $DATE = '2014-10-30'; # DATE
+our $VERSION = '0.04'; # VERSION
 
 use Perinci::CmdLine;
 Perinci::CmdLine->new(url=>'/Perinci/Examples/test_completion')->run;
@@ -21,7 +21,7 @@ peri-eg-test-completion - A script to test bash completion
 
 =head1 VERSION
 
-This document describes version 0.03 of peri-eg-test-completion (from Perl distribution Perinci-Examples-Bin), released on 2014-07-03.
+This document describes version 0.04 of peri-eg-test-completion (from Perl distribution Perinci-Examples-Bin), released on 2014-10-30.
 
 =head1 SYNOPSIS
 
@@ -36,7 +36,7 @@ Please visit the project's homepage at L<https://metacpan.org/release/Perinci-Ex
 
 =head1 SOURCE
 
-Source repository is at L<https://github.com/sharyanto/perl-Perinci-Examples-Bin>.
+Source repository is at L<https://github.com/perlancar/perl-Perinci-Examples-Bin>.
 
 =head1 BUGS
 
@@ -48,11 +48,11 @@ feature.
 
 =head1 AUTHOR
 
-Steven Haryanto <stevenharyanto@gmail.com>
+perlancar <perlancar@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2014 by Steven Haryanto.
+This software is copyright (c) 2014 by perlancar@cpan.org.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

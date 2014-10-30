@@ -1,12 +1,13 @@
-package Perinci::Examples::Bin;
+#!perl
 
 our $DATE = '2014-10-30'; # DATE
 our $VERSION = '0.04'; # VERSION
 
-use 5.010001;
+use Perinci::CmdLine;
+Perinci::CmdLine->new(url=>'/Perinci/Examples/FileStream/read_file')->run;
 
-1;
-# ABSTRACT: Perinci example scripts (using Perinci::CmdLine)
+# ABSTRACT: Read file
+# PODNAME: peri-eg-read-file
 
 __END__
 
@@ -16,17 +17,13 @@ __END__
 
 =head1 NAME
 
-Perinci::Examples::Bin - Perinci example scripts (using Perinci::CmdLine)
+peri-eg-read-file - Read file
 
 =head1 VERSION
 
-This document describes version 0.04 of Perinci::Examples::Bin (from Perl distribution Perinci-Examples-Bin), released on 2014-10-30.
+This document describes version 0.04 of peri-eg-read-file (from Perl distribution Perinci-Examples-Bin), released on 2014-10-30.
 
-=head1 DESCRIPTION
-
-This distribution contains example scripts in C<bin/> which use
-L<Perinci::CmdLine>. It was split from L<Perinci::Examples> so the latter does
-not need to depend on Perinci::CmdLine.
+=head1 SYNOPSIS
 
 =head1 HOMEPAGE
 

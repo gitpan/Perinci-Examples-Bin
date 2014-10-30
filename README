@@ -1,14 +1,15 @@
 NAME
-    Perinci::Examples::Bin - Perinci example scripts
+    Perinci::Examples::Bin - Perinci example scripts (using
+    Perinci::CmdLine)
 
 VERSION
-    This document describes version 0.03 of Perinci::Examples::Bin (from
-    Perl distribution Perinci-Examples-Bin), released on 2014-07-03.
+    This document describes version 0.04 of Perinci::Examples::Bin (from
+    Perl distribution Perinci-Examples-Bin), released on 2014-10-30.
 
 DESCRIPTION
-    This distribution contains example scripts in bin/. It is split from
-    Perinci::Examples so the latter does not need to depend on
-    Perinci::CmdLine.
+    This distribution contains example scripts in "bin/" which use
+    Perinci::CmdLine. It was split from Perinci::Examples so the latter does
+    not need to depend on Perinci::CmdLine.
 
 HOMEPAGE
     Please visit the project's homepage at
@@ -16,7 +17,7 @@ HOMEPAGE
 
 SOURCE
     Source repository is at
-    <https://github.com/sharyanto/perl-Perinci-Examples-Bin>.
+    <https://github.com/perlancar/perl-Perinci-Examples-Bin>.
 
 BUGS
     Please report any bugs or feature requests on the bugtracker website
@@ -26,10 +27,10 @@ BUGS
     to an existing test-file that illustrates the bug or desired feature.
 
 AUTHOR
-    Steven Haryanto <stevenharyanto@gmail.com>
+    perlancar <perlancar@cpan.org>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2014 by Steven Haryanto.
+    This software is copyright (c) 2014 by perlancar@cpan.org.
 
     This is free software; you can redistribute it and/or modify it under
     the same terms as the Perl 5 programming language system itself.

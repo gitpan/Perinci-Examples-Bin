@@ -2,9 +2,9 @@ use 5.006;
 use strict;
 use warnings;
 
-# this test was generated with Dist::Zilla::Plugin::Test::Compile 2.039
+# this test was generated with Dist::Zilla::Plugin::Test::Compile 2.040
 
-use Test::More  tests => 4 + ($ENV{AUTHOR_TESTING} ? 1 : 0);
+use Test::More  tests => 9 + ($ENV{AUTHOR_TESTING} ? 1 : 0);
 
 
 
@@ -13,9 +13,14 @@ my @module_files = (
 );
 
 my @scripts = (
+    'bin/peri-eg-append-file',
     'bin/peri-eg-complete-fruits',
+    'bin/peri-eg-gen-random-bytes',
+    'bin/peri-eg-read-file',
+    'bin/peri-eg-test-binary-files',
     'bin/peri-eg-test-common-opts',
-    'bin/peri-eg-test-completion'
+    'bin/peri-eg-test-completion',
+    'bin/peri-eg-write-file'
 );
 
 # no fake home requested
