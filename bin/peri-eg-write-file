@@ -1,12 +1,22 @@
 #!perl
 
-our $DATE = '2014-10-30'; # DATE
-our $VERSION = '0.04'; # VERSION
+# Note: This script is a CLI interface to Riap function /Perinci/Examples/FileStream/write_file
+# and generated automatically using Dist::Zilla::Plugin::Rinci::ScriptFromFunc version 0.02
+
+our $DATE = '2014-11-20'; # DATE
+our $VERSION = '0.05'; # VERSION
+
+use 5.010001;
+use strict;
+use warnings;
 
 use Perinci::CmdLine;
-Perinci::CmdLine->new(url=>'/Perinci/Examples/FileStream/write_file')->run;
 
-# ABSTRACT: Write file
+Perinci::CmdLine->new(
+    url => "/Perinci/Examples/FileStream/write_file",
+)->run;
+
+# ABSTRACT: peri-eg-write-file
 # PODNAME: peri-eg-write-file
 
 __END__
@@ -17,13 +27,45 @@ __END__
 
 =head1 NAME
 
-peri-eg-write-file - Write file
+peri-eg-write-file - peri-eg-write-file
 
 =head1 VERSION
 
-This document describes version 0.04 of peri-eg-write-file (from Perl distribution Perinci-Examples-Bin), released on 2014-10-30.
+This document describes version 0.05 of peri-eg-write-file (from Perl distribution Perinci-Examples-Bin), released on 2014-11-20.
 
 =head1 SYNOPSIS
+
+Usage:
+
+ % peri-eg-write-file
+
+Examples:
+
+ TODO
+
+To see all options:
+
+ % peri-eg-write-file --help
+
+=head1 DESCRIPTION
+
+Overwrites existing file.
+
+=head1 OPTIONS
+
+ TODO
+
+=head1 BASH COMPLETION
+
+This script has bash completion capability.
+
+To activate bash completion for this script, put:
+
+ complete -C peri-eg-write-file peri-eg-write-file
+
+in your bash startup (e.g. C<~/.bashrc>). Your next shell session will then recognize tab completion for the command. Or, you can also directly execute the line above in your shell to activate immediately.
+
+You can also install L<App::BashCompletionProg> which makes it easy to add completion for Perinci::CmdLine-based scripts. After you install the module and put C<. ~/.bash-complete-prog> (or C<. /etc/bash-complete-prog>), you can just run C<bash-completion-prog> and the C<complete> command will be added to your C<~/.bash-completion-prog>. Your next shell session will then recognize tab completion for the command.
 
 =head1 HOMEPAGE
 

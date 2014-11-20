@@ -1,7 +1,7 @@
 package Perinci::Examples::Bin;
 
-our $DATE = '2014-10-30'; # DATE
-our $VERSION = '0.04'; # VERSION
+our $DATE = '2014-11-20'; # DATE
+our $VERSION = '0.05'; # VERSION
 
 use 5.010001;
 
@@ -20,7 +20,7 @@ Perinci::Examples::Bin - Perinci example scripts (using Perinci::CmdLine)
 
 =head1 VERSION
 
-This document describes version 0.04 of Perinci::Examples::Bin (from Perl distribution Perinci-Examples-Bin), released on 2014-10-30.
+This document describes version 0.05 of Perinci::Examples::Bin (from Perl distribution Perinci-Examples-Bin), released on 2014-11-20.
 
 =head1 DESCRIPTION
 

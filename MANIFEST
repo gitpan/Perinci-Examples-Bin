@@ -8,6 +8,7 @@ Makefile.PL
 README
 bin/peri-eg-append-file
 bin/peri-eg-complete-fruits
+bin/peri-eg-demo-cli-opts
 bin/peri-eg-gen-random-bytes
 bin/peri-eg-read-file
 bin/peri-eg-test-binary-files

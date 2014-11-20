@@ -1,12 +1,22 @@
 #!perl
 
-our $DATE = '2014-10-30'; # DATE
-our $VERSION = '0.04'; # VERSION
+# Note: This script is a CLI interface to Riap function /Perinci/Examples/test_binary
+# and generated automatically using Dist::Zilla::Plugin::Rinci::ScriptFromFunc version 0.02
+
+our $DATE = '2014-11-20'; # DATE
+our $VERSION = '0.05'; # VERSION
+
+use 5.010001;
+use strict;
+use warnings;
 
 use Perinci::CmdLine;
-Perinci::CmdLine->new(url=>'/Perinci/Examples/CmdLineSrc/test_binary')->run;
 
-# ABSTRACT: Generate random bytes
+Perinci::CmdLine->new(
+    url => "/Perinci/Examples/test_binary",
+)->run;
+
+# ABSTRACT: Accept and send binary data
 # PODNAME: peri-eg-test-binary-files
 
 __END__
@@ -17,13 +27,73 @@ __END__
 
 =head1 NAME
 
-peri-eg-test-binary-files - Generate random bytes
+peri-eg-test-binary-files - Accept and send binary data
 
 =head1 VERSION
 
-This document describes version 0.04 of peri-eg-test-binary-files (from Perl distribution Perinci-Examples-Bin), released on 2014-10-30.
+This document describes version 0.05 of peri-eg-test-binary-files (from Perl distribution Perinci-Examples-Bin), released on 2014-11-20.
 
 =head1 SYNOPSIS
+
+Usage:
+
+ % peri-eg-test-binary-files
+
+Examples:
+
+ TODO
+
+To see all options:
+
+ % peri-eg-test-binary-files --help
+
+=head1 DESCRIPTION
+
+This function sets its argument's schema type as C<buf> which indicates the
+argument accepts binary data. Likewise it also sets its result's schema type as
+C<buf> which says that function will return binary data.
+
+The function just returns its argument.
+
+Note that since the metadata also contains null ("\0") in the C<default> property
+of the argument specification, the metadata is also not JSON-safe.
+
+To pass binary data over JSON/Riap, you can use Riap version 1.2 and encode the
+argument with ":base64" suffix, e.g.:
+
+ $res = Perinci::Access->new->request(
+     call => "http://example.com/api/Perinci/Examples/test_binary",
+     {v=>1.2, args=>{"data:base64"=>"/wA="}}); # send "\xff\0"
+
+Without C<< v=E<gt>1.2 >>, encoded argument won't be decoded by the server.
+
+To pass binary data on the command-line, you can use C<--ARG-base64> if the
+command-line library provides it.
+
+To receive binary result over JSON/Riap, you can use Riap version 1.2 which will
+automatically encode binary data with base64 so it is safe when transformed as
+JSON. The client library will also decode the encoded result back to the
+original, so the whole process is transparent to you:
+
+ $res = Perinci::Access->new->request(
+     call => "http://example.com/api/Perinci/Examples/test_binary",
+     {v=>1.2}); # => [200,"OK","\0\0\0",{}]
+
+=head1 OPTIONS
+
+ TODO
+
+=head1 BASH COMPLETION
+
+This script has bash completion capability.
+
+To activate bash completion for this script, put:
+
+ complete -C peri-eg-test-binary-files peri-eg-test-binary-files
+
+in your bash startup (e.g. C<~/.bashrc>). Your next shell session will then recognize tab completion for the command. Or, you can also directly execute the line above in your shell to activate immediately.
+
+You can also install L<App::BashCompletionProg> which makes it easy to add completion for Perinci::CmdLine-based scripts. After you install the module and put C<. ~/.bash-complete-prog> (or C<. /etc/bash-complete-prog>), you can just run C<bash-completion-prog> and the C<complete> command will be added to your C<~/.bash-completion-prog>. Your next shell session will then recognize tab completion for the command.
 
 =head1 HOMEPAGE
 

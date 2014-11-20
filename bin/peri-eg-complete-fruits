@@ -1,12 +1,22 @@
 #!perl
 
-our $DATE = '2014-10-30'; # DATE
-our $VERSION = '0.04'; # VERSION
+# Note: This script is a CLI interface to Riap function /Perinci/Examples/Completion/fruits
+# and generated automatically using Dist::Zilla::Plugin::Rinci::ScriptFromFunc version 0.02
+
+our $DATE = '2014-11-20'; # DATE
+our $VERSION = '0.05'; # VERSION
+
+use 5.010001;
+use strict;
+use warnings;
 
 use Perinci::CmdLine;
-Perinci::CmdLine->new(url=>'/Perinci/Examples/Completion/fruits')->run;
 
-# ABSTRACT: A script to test completing array argument's elements
+Perinci::CmdLine->new(
+    url => "/Perinci/Examples/Completion/fruits",
+)->run;
+
+# ABSTRACT: peri-eg-complete-fruits
 # PODNAME: peri-eg-complete-fruits
 
 __END__
@@ -17,20 +27,45 @@ __END__
 
 =head1 NAME
 
-peri-eg-complete-fruits - A script to test completing array argument's elements
+peri-eg-complete-fruits - peri-eg-complete-fruits
 
 =head1 VERSION
 
-This document describes version 0.04 of peri-eg-complete-fruits (from Perl distribution Perinci-Examples-Bin), released on 2014-10-30.
+This document describes version 0.05 of peri-eg-complete-fruits (from Perl distribution Perinci-Examples-Bin), released on 2014-11-20.
 
 =head1 SYNOPSIS
 
- % complete -C peri-eg-complete-fruits peri-eg-complete-fruits
- % peri-eg-complete-fruits <tab>
- % peri-eg-complete-fruits apple <tab>
- % peri-eg-complete-fruits apple banana <tab>
- % peri-eg-complete-fruits apple banana b<tab>
- # and so on
+Usage:
+
+ % peri-eg-complete-fruits
+
+Examples:
+
+ TODO
+
+To see all options:
+
+ % peri-eg-complete-fruits --help
+
+=head1 DESCRIPTION
+
+Demonstrates completion of array elements.
+
+=head1 OPTIONS
+
+ TODO
+
+=head1 BASH COMPLETION
+
+This script has bash completion capability.
+
+To activate bash completion for this script, put:
+
+ complete -C peri-eg-complete-fruits peri-eg-complete-fruits
+
+in your bash startup (e.g. C<~/.bashrc>). Your next shell session will then recognize tab completion for the command. Or, you can also directly execute the line above in your shell to activate immediately.
+
+You can also install L<App::BashCompletionProg> which makes it easy to add completion for Perinci::CmdLine-based scripts. After you install the module and put C<. ~/.bash-complete-prog> (or C<. /etc/bash-complete-prog>), you can just run C<bash-completion-prog> and the C<complete> command will be added to your C<~/.bash-completion-prog>. Your next shell session will then recognize tab completion for the command.
 
 =head1 HOMEPAGE
 
